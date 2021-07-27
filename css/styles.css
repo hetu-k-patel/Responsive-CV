@@ -41,11 +41,28 @@ main {
    border-radius: 50%;
 }
 
+.left-side .profile-text {
+   margin: 18px 0;
+   display: none;
+}
+
+.left-side .profile-text h1 {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 400;
+   margin-bottom: 7px;
+}
+
+.left-side .profile-text p {
+   letter-spacing: 1.2px;
+}
+
 .left-side .about-me {
    padding: 20px;
 }
 
 .left-side .about-me h3 {
+   font-weight: 500;
    letter-spacing: 2px;
    text-transform: uppercase;
 }
@@ -68,6 +85,7 @@ main {
 }
 
 .left-side .contact h3 {
+   font-weight: 500;
    letter-spacing: 2px;
 }
 
@@ -87,7 +105,7 @@ main {
 
 .left-side .contact h5 {
    font-size: 14px;
-   margin-bottom: 3px;
+   margin-bottom: 6px;
    letter-spacing: 1.5px;
 }
 
@@ -101,6 +119,7 @@ main {
 }
 
 .left-side .skills h3 {
+   font-weight: 500;
    letter-spacing: 2px;
    text-transform: uppercase;
 }
@@ -319,4 +338,84 @@ main {
    font-size: 14px;
    color: gray;
    letter-spacing: 1px;
+}
+
+/* Media Queries*/
+
+@media (max-width: 1210px) {
+   main {
+      width: 90%;
+   }
+}
+
+@media (max-width: 1096px) {
+   main {
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+   }
+
+   .left-side .profile img {
+      width: 140px;
+      height: 140px;
+   }
+}
+
+@media (max-width: 720px) {
+   main {
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+   }
+
+   .left-side .profile img {
+      width: 140px;
+      height: 140px;
+   }
+
+   .wrapper {
+      grid-template-columns: 1fr;
+   }
+
+   .left-side .profile-text {
+      display: block;
+   }
+
+   .right-side {
+      margin-top: 25px;
+   }
+
+   .right-side .name {
+      display: none;
+   }
+}
+
+@media (max-width: 420px) {
+   .left-side .profile img {
+      width: 130px;
+      height: 130px;
+   }
+
+   .right-side .work-experience ul li .title {
+      margin-bottom: 20px;
+   }
+   .right-side .work-experience ul li {
+      flex-direction: column;
+   }
+
+   .right-side .education ul li .title {
+      margin-bottom: 20px;
+   }
+   .right-side .education ul li {
+      flex-direction: column;
+   }
+
+   .right-side .reference ul li {
+      margin-bottom: 0;
+      flex-direction: column;
+   }
+
+   .right-side .reference ul li .reference-description {
+      margin-bottom: 20px;
+   }
 }
