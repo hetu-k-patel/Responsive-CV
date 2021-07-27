@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Roboto', sans-serif;
+}
+
+main {
+   width: 70%;
+   margin: 40px auto;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.wrapper {
+   /* height: 1000px; */
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+.left-side {
+   background-color: teal;
+   color: white;
+}
+
+.left-side .profile {
+   margin-top: 35px;
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+.left-side .profile img {
+   width: 170px;
+   height: 170px;
+   border-radius: 50%;
+}
+
+.left-side .about-me {
+   padding: 20px;
+}
+
+.left-side .about-me h3 {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.left-side .about-me hr {
+   margin: 13px 0;
+   border-width: 2px;
+   border-bottom: none;
+}
+
+.left-side .about-me p {
+   font-size: 14px;
+   word-wrap: break-word;
+   line-height: 1.4;
+   letter-spacing: 1.2px;
+}
+
+.left-side .contact {
+   padding: 20px;
+}
+
+.left-side .contact h3 {
+   letter-spacing: 2px;
+}
+
+.left-side .contact hr {
+   margin: 13px 0;
+   border-width: 2px;
+   border-bottom: none;
+}
+
+.left-side .contact ul {
+   list-style: none;
+}
+
+.left-side .contact li {
+   margin-bottom: 20px;
+}
+
+.left-side .contact h5 {
+   font-size: 14px;
+   margin-bottom: 3px;
+   letter-spacing: 1.5px;
+}
+
+.left-side .contact p {
+   font-size: 14px;
+   letter-spacing: 1px;
+}
+
+.left-side .skills {
+   padding: 20px;
+}
+
+.left-side .skills h3 {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.left-side .skills hr {
+   margin: 13px 0;
+   border-width: 2px;
+   border-bottom: none;
+}
+
+.left-side .skills ul {
+   list-style: none;
+}
+
+.left-side .skills ul li {
+   margin-bottom: 25px;
+}
+
+.left-side .skills ul li h5 {
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   display: inline-block;
+   width: 100px;
+}
+
+.left-side .skills ul li span {
+   border: 5px solid gray;
+   position: relative;
+   font-size: 5px;
+   vertical-align: middle;
+   display: inline-block;
+   width: 125px;
+}
+
+.left-side .skills ul li span::after {
+   content: '';
+   height: 10px;
+   position: absolute;
+   top: -5px;
+   left: -5px;
+   background-color: white;
+}
+
+.left-side .skills ul li:nth-child(1) span::after {
+   width: 100px;
+}
+.left-side .skills ul li:nth-child(2) span::after {
+   width: 90px;
+}
+.left-side .skills ul li:nth-child(3) span::after {
+   width: 85px;
+}
+.left-side .skills ul li:nth-child(4) span::after {
+   width: 95px;
+}
+.left-side .skills ul li:nth-child(5) span::after {
+   width: 70px;
+}
+
+.right-side {
+   /* background-color: blue; */
+   padding: 25px;
+}
+
+.right-side .name {
+   margin: 65px 15px;
+}
+
+.right-side .name h1 {
+   font-size: 50px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.right-side .name p {
+   letter-spacing: 2.5px;
+   font-size: 17px;
+   color: gray;
+}
+
+.right-side .work-experience h2 {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.right-side .work-experience hr {
+   margin: 20px 0;
+   border-width: 2px;
+   border-bottom: none;
+}
+
+.right-side .work-experience ul {
+   list-style: none;
+}
+
+.right-side .work-experience ul li {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+}
+
+.right-side .work-experience ul li .title {
+   flex: 1;
+}
+
+.right-side .work-experience ul li .description {
+   flex: 2;
+}
+.right-side .work-experience ul li .title h4 {
+   margin-bottom: 10px;
+   letter-spacing: 1.2px;
+}
+
+.right-side .work-experience ul li .title span {
+   color: gray;
+   font: size 15px;
+}
+
+.right-side .work-experience ul li .description h4 {
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+}
+
+.right-side .work-experience ul li .description p {
+   font-size: 14px;
+   color: gray;
+   line-height: 1.4;
+   letter-spacing: 1px;
+}
+
+.right-side .education h2 {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.right-side .education hr {
+   margin: 20px 0;
+   border-width: 2px;
+   border-bottom: none;
+}
+
+.right-side .education ul {
+   list-style: none;
+}
+
+.right-side .education ul li {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+}
+
+.right-side .education ul li .title {
+   flex: 1;
+}
+
+.right-side .education ul li .description {
+   flex: 2;
+}
+.right-side .education ul li .title h4 {
+   margin-bottom: 10px;
+   letter-spacing: 1.2px;
+}
+
+.right-side .education ul li .title span {
+   color: gray;
+   font: size 15px;
+}
+
+.right-side .education ul li .description h4 {
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+}
+
+.right-side .education ul li .description p {
+   font-size: 14px;
+   color: gray;
+   letter-spacing: 1px;
+   line-height: 1.4;
+}
+
+.right-side .reference h2 {
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.right-side .reference hr {
+   margin: 20px 0;
+   border-width: 2px;
+   border-bottom: none;
+}
+
+.right-side .reference ul {
+   list-style: none;
+}
+
+.right-side .reference ul li {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+}
+
+.right-side .reference ul li .reference-description {
+   flex: 1;
+}
+
+.right-side .reference ul li .reference-description h4 {
+   text-transform: uppercase;
+   margin-bottom: 7px;
+   letter-spacing: 1px;
+}
+
+.right-side .reference ul li .reference-description p {
+   margin-bottom: 3px;
+   font-size: 14px;
+   color: gray;
+   letter-spacing: 1px;
+}
